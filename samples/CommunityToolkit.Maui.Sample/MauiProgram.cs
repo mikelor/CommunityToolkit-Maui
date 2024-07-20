@@ -31,6 +31,7 @@ using Microsoft.Extensions.Http.Resilience;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;
 using Microsoft.Maui.Platform;
+using Microsoft.Maui.Controls.Maps;
 using Polly;
 
 
@@ -68,6 +69,7 @@ public static class MauiProgram
 								.UseMauiCommunityToolkitCamera()
 								.UseMauiCommunityToolkitMediaElement()
 								.UseMauiCommunityToolkitMaps("KEY") // You should add your own key here from bingmapsportal.com
+								.UseMauiMaps()
 								.UseMauiApp<App>()
 								.ConfigureFonts(fonts =>
 								{
